@@ -67,7 +67,7 @@ fun DiceWithButtonAndImage(modifier: Modifier=Modifier) {
     }
     Column(modifier = modifier, horizontalAlignment = Alignment.CenterHorizontally){
         Image(
-            painter = painterResource(R.drawable.dice_1),
+            painter = painterResource(imageResource),
             contentDescription = result.toString()
         )
         Button(onClick = { result = (1..6).random() },
